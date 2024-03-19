@@ -1,3 +1,80 @@
+# 0x02. AirBnB clone - MySQL
+
+This repository contains solutions to the AirBnB clone project focusing on MySQL for Holberton School. The project involves implementing unit testing, handling environment variables, creating a MySQL database, and implementing an ORM.
+
+## Background Context
+
+Environment variables will play a significant role in this project. The following environment variables will be used:
+
+- `HBNB_ENV`: running environment. It can be “dev” or “test” for the moment (“production” soon!)
+- `HBNB_MYSQL_USER`: the username of your MySQL
+- `HBNB_MYSQL_PWD`: the password of your MySQL
+- `HBNB_MYSQL_HOST`: the hostname of your MySQL
+- `HBNB_MYSQL_DB`: the database name of your MySQL
+- `HBNB_TYPE_STORAGE`: the type of storage used. It can be “file” (using FileStorage) or db (using DBStorage)
+
+## Resources
+
+- [cmd module](https://docs.python.org/3/library/cmd.html)
+- [unittest module](https://docs.python.org/3/library/unittest.html)
+- [args/kwargs](https://docs.python.org/3/tutorial/controlflow.html#keyword-arguments)
+- [SQLAlchemy tutorial](https://docs.sqlalchemy.org/en/14/orm/tutorial.html)
+- [How To Create a New User and Grant Permissions in MySQL](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql)
+- [Python3 and environment variables](https://docs.python.org/3/library/os.html#os.getenv)
+- [SQLAlchemy](https://www.sqlalchemy.org/)
+- [MySQL 8.0 SQL Statement Syntax](https://dev.mysql.com/doc/refman/8.0/en/sql-syntax.html)
+
+## Learning Objectives
+
+Upon completion of this project, you should be able to explain the following concepts without the help of Google:
+
+- Unit testing and its implementation in a large project
+- *args and how to use them
+- **kwargs and how to use them
+- Handling named arguments in a function
+- Creating a MySQL database
+- Creating a MySQL user and granting privileges
+- ORM (Object-Relational Mapping)
+- Mapping a Python Class to a MySQL table
+- Handling 2 different storage engines with the same codebase
+- Using environment variables
+
+## Requirements
+
+### Python Scripts
+
+- Allowed editors: vi, vim, emacs
+- All files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
+- All files should end with a new line
+- The first line of all files should be exactly `#!/usr/bin/python3`
+- A README.md file, at the root of the folder of the project, is mandatory
+- Code should use pycodestyle (version 2.8.*)
+- All files must be executable
+- Documentation is required for all modules, classes, and functions
+- Documentation should be a real sentence explaining the purpose of the module, class, or method
+- All modules, classes, and functions should be documented
+- All your test files should be inside a folder named `tests`
+- Use the unittest module for testing
+- All tests should be executed using `python3 -m unittest discover tests`
+
+### SQL Scripts
+
+- Allowed editors: vi, vim, emacs
+- All files will be executed on Ubuntu 20.04 LTS using MySQL 8.0
+- All files should end with a new line
+- All SQL queries should have a comment just before
+- All files should start with a comment describing the task
+- All SQL keywords should be in uppercase
+- A README.md file, at the root of the folder of the project, is mandatory
+
+## GitHub
+
+- There should be one project repository per group
+- Do not clone/fork/whatever a partner’s project repository with the same name before the second deadline, as it will result in a 0% score
+
+
+
+
 <center> <h1>HBNB - The Console</h1> </center>
 
 This repository contains the initial stage of a student project to build a clone of the AirBnB website. This stage implements a backend interface, or console, to manage program data. Console commands allow the user to create, update, and destroy objects, as well as manage file storage. Using a system of JSON serialization/deserialization, storage is persistent between sessions.
