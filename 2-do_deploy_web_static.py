@@ -31,7 +31,7 @@ def do_deploy(archive_path):
     """
     try:
         archive = archive_path.split('/')[-1]
-        path = '/data/web_static/releases/' + archive.strip('.tgz')
+        path = '/data/web_static/releases/' + archive.split('.')[0]
         current = '/data/web_static/current'
         put(archive_path, '/tmp')
         run('mkdir -p {}/'.format(path))
