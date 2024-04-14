@@ -15,12 +15,14 @@ def do_pack():
     """
     Targging project directory into a packages as .tgz
     """
-    now = datetime.now().strftime("%Y%m%d%H%M%S")
-    local('sudo mkdir -p ./versions')
-    path = './versions/web_static_{}'.format(now)
-    local('sudo tar -czvf {}.tgz web_static'.format(path))
-    name = '{}.tgz'.format(path)
-    if name:
-        return name
-    else:
+    time_format = '%Y%m%d%H%M%S'
+    archive_name = 'web_static_' + datetime.now().strftime(time_format) + '.tgz'
+    archive_path = 'versions/' + archive_name
+
+    local('mkdir -p versions')  # Create versions folder if it doesn't exist
+    result = local('tar -czvf {} web_static'.format(archive_path))
+
+    if result.failed:
         return None
+    else:
+        return archive_path
