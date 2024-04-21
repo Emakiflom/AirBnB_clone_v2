@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
-Created on Sun Apr  21 11:15:54 2024
+Created on Sun Apr  21  2024
 
 @author: Robinson Montes
 """
